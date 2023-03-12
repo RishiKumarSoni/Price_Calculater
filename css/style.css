@@ -76,14 +76,18 @@ body {
 }
 
 .finalTextArea {
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
+    margin: 12px 0;
+
 }
 
 .finalPriceArea {
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    margin: 12px 0;
 }
 
 .final span {
