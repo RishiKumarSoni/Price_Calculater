@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.P.J</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <a class="logo" id="logo" onclick="clear()">
+            <img src="./assets/logo.png" alt="logo">
+        </a>
+
+        <div class="part weight">
+            <img src="./assets/gold.png" alt="weight">
+            <span>item weight in gm :</span>
+            <input type="text" name="gram" class="inputField" id="itemWeight" inputmode="numeric">
+        </div>
+
+        <div class="part rate">
+            <img src="./assets/rupee.png" alt="rate">
+            <span>price per gram :</span>
+            <input type="text" name="rate" class="inputField" id="itemRate" inputmode="numeric">
+        </div>
+
+        <div class="part price">
+            <img src="./assets/plus.png" alt="add">
+            <span>additional charges :</span>
+            <input type="text" name="add" class="inputField" id="addItem" inputmode="numeric">
+        </div>
+
+        <div class="final">
+            <p class="finalTextArea">Final price</p>
+            <p class="finalPriceArea">
+                <span>Rs.</span>
+                <span><input type="text" name="finalPrice" class="finalArea" id="final" inputmode="numeric" contenteditable="false"></span>
+                <span> /-</span>
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    margin: 0 auto;
+
+    min-height: 100vh;
+
+    background: linear-gradient(to left top, #D4B07A, #A6C5A3, #87BB7A);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin: 64px auto;
+}
+
+.part {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.weight {
+    background: #dddddd;
+    border-radius: 16px;
+
+    margin: 8px auto;
+
+    width: 360px;
+    height: 56px;
+}
+
+.rate {
+    margin: 8px auto;
+
+    background: #dddddd;
+    border-radius: 16px;
+
+    width: 360px;
+    height: 56px;
+}
+
+.price {
+    margin: 8px auto;
+
+    background: #dddddd;
+    border-radius: 16px;
+
+    width: 360px;
+    height: 56px;
+}
+
+.inputField {
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+
+    width: 140px;
+    height: 28px;
+}
+
+.final {
+    margin: 16px auto;
+
+    background: #eee;
+
+    width: 360px;
+    height: 116px;
+
+    border-radius: 16px;
+}
+
+.finalTextArea {
+    font-size: 18px;
+    text-align: center;
+}
+
+.finalPriceArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.final span {
+    font-size: 32px;
+}
+
+.finalArea {
+    width: 234px;
+    height: 42px;
+
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+}
