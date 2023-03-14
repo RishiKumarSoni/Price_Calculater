@@ -4,12 +4,19 @@ itemWeightRef = document.getElementById("itemWeight");
 itemRateRef = document.getElementById("itemRate");
 addItemRef = document.getElementById("addItem");
 
-function clear(){
-    console.log('hello my friend');
-    itemWeightRef.innerHTML = '';
-    itemRateRef.innerText = '';
-    addItemRef.value = '';
-    console.log('clicked on logo');
+finalRef = document.getElementById("Final");
+
+itemWeightRef.value = 0;
+itemRateRef.value = 0;
+addItemRef.value = 0;
+
+function clean(){
+    itemWeightRef.value = 0;
+    itemRateRef.value = 0;
+    addItemRef.value = 0;
+    finalRef.value = '';
 }
 
-console.log('Hello World');
+function make() {
+    finalRef.value = Number(itemWeightRef.value) * Number(itemRateRef.value) + Number(addItemRef.value);
+}

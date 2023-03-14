@@ -13,33 +13,33 @@
 <body>
     <div class="wrapper">
 
-        <a class="logo" id="logo" onclick="clear();">
-            <img src="./assets/logo.png" alt="logo">
+        <a class="logo" id="logo" onclick="clean();">
+            <img src="./assets/logo.png" alt="logo" class="image">
         </a>
 
         <div class="part weight">
             <img src="./assets/gold.png" alt="weight">
             <span>item weight in gm :</span>
-            <input type="text" name="gram" class="inputField" id="itemWeight" inputmode="numeric">
+            <input type="text" name="gram" class="inputField" id="itemWeight" inputmode="numeric" onchange="make();">
         </div>
 
         <div class="part rate">
             <img src="./assets/rupee.png" alt="rate">
             <span>price per gram :</span>
-            <input type="text" name="rate" class="inputField" id="itemRate" inputmode="numeric">
+            <input type="text" name="rate" class="inputField" id="itemRate" inputmode="numeric" onchange="make();">
         </div>
 
         <div class="part price">
             <img src="./assets/plus.png" alt="add">
             <span>additional charges :</span>
-            <input type="text" name="add" class="inputField" id="addItem" inputmode="numeric">
+            <input type="text" name="add" class="inputField" id="addItem" inputmode="numeric" onchange="make();">
         </div>
 
         <div class="final">
             <p class="finalTextArea">Final price</p>
             <p class="finalPriceArea">
                 <span>Rs.</span>
-                <span><input type="text" name="finalPrice" class="finalArea" id="final" inputmode="numeric" contenteditable="false"></span>
+                <span><input type="text" name="finalPrice" class="finalArea" id="Final" inputmode="numeric" contenteditable="false"></span>
                 <span> /-</span>
             </p>
         </div>
