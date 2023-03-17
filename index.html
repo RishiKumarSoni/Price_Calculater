@@ -18,21 +18,30 @@
         </a>
 
         <div class="part weight">
-            <img src="./assets/gold.png" alt="weight">
-            <span>item weight in gm :</span>
-            <input type="text" name="gram" class="inputField" id="itemWeight" inputmode="numeric" onchange="make();">
+            <div>
+                <img src="./assets/gold.png" alt="weight">
+                <label>item weight in gm </label>
+            </div>
+            <input type="text" title="item weight in grams" name="gram" class="inputField" id="itemWeight" inputmode="numeric" onchange="make();">
+            <img src="./assets/backSq.png" alt="<" class="arrow" onclick="ground('gold');">
         </div>
 
         <div class="part rate">
-            <img src="./assets/rupee.png" alt="rate">
-            <span>price per gram :</span>
-            <input type="text" name="rate" class="inputField" id="itemRate" inputmode="numeric" onchange="make();">
+            <div>
+                <img src="./assets/rupee.png" alt="rate">
+                <label>price per gram </label>
+            </div>
+            <input type="text" title="price per gram" name="rate" class="inputField" id="itemRate" inputmode="numeric" onchange="make();">
+            <img src="./assets/backSq.png" alt="<" class="arrow" onclick="ground('rupee');">
         </div>
 
         <div class="part price">
-            <img src="./assets/plus.png" alt="add">
-            <span>additional charges :</span>
-            <input type="text" name="add" class="inputField" id="addItem" inputmode="numeric" onchange="make();">
+            <div>
+                <img src="./assets/plus.png" alt="add">
+                <label>additional charges </label>
+            </div>
+            <input type="text" title="additional charges" name="add" class="inputField" id="addItem" inputmode="numeric" onchange="make();">
+            <img src="./assets/backSq.png" alt="<" class="arrow" onclick="ground('add');">
         </div>
 
         <div class="final">

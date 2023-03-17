@@ -27,21 +27,11 @@ body {
 
 .part {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-}
+    justify-content: space-between;
 
-.weight {
-    background: #dddddd;
-    border-radius: 16px;
-
-    margin: 8px auto;
-
-    width: 360px;
-    height: 56px;
-}
-
-.rate {
+    padding: 0 16px 0 8px;
     margin: 8px auto;
 
     background: #dddddd;
@@ -49,17 +39,33 @@ body {
 
     width: 360px;
     height: 56px;
+
+    position: relative;
 }
 
-.price {
-    margin: 8px auto;
+.part div {
+    display: flex;
+    align-items: center;
+}
 
+.part img {
+    padding: 0 8px;
+}
+
+.part .arrow {
+    position: absolute;
+    right: 16px;
+}
+
+/* .weight, .rate, .price {
     background: #dddddd;
     border-radius: 16px;
 
+    margin: 8px auto;
+
     width: 360px;
     height: 56px;
-}
+} */
 
 .inputField {
     border: none;
@@ -68,7 +74,7 @@ body {
 
     font-size: 16px;
 
-    width: 140px;
+    width: 170px;
     height: 28px;
 }
 
