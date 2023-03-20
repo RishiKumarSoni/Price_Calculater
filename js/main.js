@@ -18,7 +18,17 @@ function clean(){
 }
 
 function make() {
-    finalRef.value = Number(itemWeightRef.value) * Number(itemRateRef.value) + Number(addItemRef.value);
+    if (isNaN(itemWeightRef.value)) {
+        itemWeightRef.value = 0;
+    }
+    if (isNaN(itemRateRef.value)) {
+        itemRateRef.value = 0;
+    }
+    if (isNaN(addItemRef.value)) {
+        addItemRef.value = 0;
+    }
+    const finalPrice = (Number(itemWeightRef.value) * Number(itemRateRef.value) + Number(addItemRef.value)).toFixed(2);
+    finalRef.value = finalPrice;
 }
 
 function ground(x) {

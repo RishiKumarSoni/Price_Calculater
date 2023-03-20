@@ -6,6 +6,7 @@ body {
 
     min-height: 100vh;
     width: auto;
+    align-items: center;
 
     background: linear-gradient(to left top, #D4B07A, #A6C5A3, #87BB7A);
 }
@@ -13,16 +14,12 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: flex-start;
 }
 
 .logo {
-    margin: 32px auto;
-    text-align: center;
-}
-
-.image {
-    width: 50%;
+    width: 240px;
+    margin: 48px auto 24px auto;
 }
 
 .part {
@@ -37,7 +34,7 @@ body {
     background: #dddddd;
     border-radius: 16px;
 
-    width: 360px;
+    width: 330px;
     height: 56px;
 
     position: relative;
@@ -74,17 +71,18 @@ body {
 
     font-size: 16px;
 
-    width: 170px;
+    width: 160px;
     height: 28px;
 }
 
 .final {
     margin: 16px auto;
+    padding: 16px;
 
     background: #eee;
 
-    width: 360px;
-    height: 116px;
+    width: 320px;
+    height: 100px;
 
     border-radius: 16px;
 }
@@ -92,8 +90,7 @@ body {
 .finalTextArea {
     font-size: 24px;
     text-align: center;
-    margin: 12px 0;
-
+    margin-top: 0;
 }
 
 .finalPriceArea {
@@ -101,7 +98,7 @@ body {
     align-items: center;
     justify-content: space-around;
 
-    margin: 12px 0;
+    /* margin: 12px 0; */
 }
 
 .final span {
